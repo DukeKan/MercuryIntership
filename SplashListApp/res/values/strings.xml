@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">SplashListApp</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="splash">Splash screen</string>
     <string name="title_activity_home">HomeActivity</string>
 
 </resources>
