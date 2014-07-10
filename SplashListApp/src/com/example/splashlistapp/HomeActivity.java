@@ -10,7 +10,8 @@ import android.widget.TextView;
 public class HomeActivity extends Activity {
 
 	private final byte sizeOfItemsList = 20;
-
+	private final String headerText = "Текст заголовка";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class HomeActivity extends Activity {
 				android.R.layout.simple_list_item_1, items);
 
 		View header = getLayoutInflater().inflate(R.layout.list_header, null);
-		((TextView) header.findViewById(R.id.tvText)).setText("Заголовок");
+		((TextView) header.findViewById(R.id.tvText)).setText(headerText);
 
 		lv.addHeaderView(header);
 		lv.setAdapter(adapter);

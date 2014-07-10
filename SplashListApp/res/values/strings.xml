@@ -4,6 +4,6 @@
     <string name="app_name">SplashListApp</string>
     <string name="splash">Splash screen</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="header_title">Header</string>
+    <string name="header_title">Заголовок</string>
 
 </resources>
