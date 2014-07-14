@@ -10,24 +10,24 @@ import android.widget.TextView;
 public class HomeActivity extends Activity {
 
 	private final byte sizeOfItemsList = 20;
-	private final String headerText = "Текст заголовка";
+	private final String headerText = "Р—Р°РіРѕР»РѕРІРѕРє";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.a_home_activity);
 
-		// получаем экземпляр элемента ListView
+		// РС‰РµРј view РїРѕ id
 		ListView lv = (ListView) findViewById(R.id.listOfItems);
 
-		// определяем массив типа String
+		// РњР°СЃСЃРёРІ РЅР°Р·РІР°РЅРёР№ РїСѓРЅРєС‚РѕРІ РјРµРЅСЋ
 		final String[] items = new String[sizeOfItemsList];
 
 		for (int i = 0; i < sizeOfItemsList; i++) {
 			items[i] = "item" + i;
 		}
 
-		// используем адаптер данных
+		// РЎРѕР·РґР°С‘Рј Р°РґР°РїС‚РµСЂ
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, items);
 
